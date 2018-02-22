@@ -1,0 +1,23 @@
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<button class="btn btn-sm btn-primary" ng-click="goToHome()">Back to Transaction Window</button>
+		<br><br>
+		<table class="table table-bordered">
+			<thead>
+				<th>Type of Currency</th>
+				<th>Number of notes</th>
+				<th>Total</th>
+			</thead>
+			<tbody>
+				<tr ng-repeat="data in details">
+					<td>{{data.currency}}</td>
+					<td>{{data.count}}</td>
+					<td>{{data.count * data.currency}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="clearfix"></div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
